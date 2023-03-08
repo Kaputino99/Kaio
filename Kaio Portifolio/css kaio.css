@@ -1,0 +1,183 @@
+body {}
+
+.inicio {
+    padding-top: 35px;
+    border-radius: 15px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+
+.bemVindo {
+    align-items: center;
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 10%;
+    color: rgb(0, 0, 0);
+}
+
+.kaio {
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    height: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.proj {
+    margin-top: 125px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+
+nav {
+    width: 100%;
+    height: 350px;
+    background-color: #000000bd;
+    border-radius: 40px;
+
+}
+
+img {
+    margin: 25px;
+    width: 5%;
+    height: auto;
+}
+
+.kaioft {
+    margin-top: 2%;
+    border-radius: 350px;
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -3.7%;
+    text-align: center;
+    width: 760px;
+    height: auto;
+    padding-right: 67px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.apresentacao {
+    margin-top: 470px;
+    width: 100%;
+    height: 500px;
+    background-color: #000000bd;
+}
+
+.apresentacao P {
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+
+
+
+/* Estilo Cards*/
+
+
+@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+
+/* Revela o card */
+body .Card {
+    display: flex;
+    min-width: 600px;
+    max-width: 1980px;
+    width: calc(100% - 100px);
+    height: 600px;
+}
+
+/* Revela o card */
+body .Card .option {
+    overflow: hidden;
+    min-width: 100px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #000000));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+/*Quando o card fechado*/
+body .Card .option.active {
+    flex-grow: 1000;
+    transform: scale(1);
+    max-width: 6000px;
+    margin: 0px;
+    border-radius: 30px;
+    background-size: auto;
+    /*&:active {
+     transform:scale(0.9);
+  }*/
+}
+
+/* Arredondamento de cada Card*/
+body .Card .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 40px;
+}
+
+/* Organiza a posição do titulo e descrição dentro de cada card*/
+body .Card .option:not(.active) .label .info>div {
+    left: 20px;
+    opacity: 0;
+}
+
+/* Posição do texto e titulo de cada card*/
+body .Card .option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/* Posição do titulo e descrição dentro de cada card */
+body .Card .option .label {
+    position: absolute;
+    right: 0px;
+    height: 400px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+body .Card .option .label .info {
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 174px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    white-space: pre;
+}
+
+/* Fonte do Texto e Descrição dentro*/
+body .Card .option .label .info .main {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*Delay da descrição dentro do card*/
+body .Card .option .label .info .sub {
+    transition-delay: 0.1s;
+    background-color: #000000bd;
+    height: 50px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+.carroceu {
+    margin-left: 25%;
+    width: auto;
+    height: 500px;
+}
