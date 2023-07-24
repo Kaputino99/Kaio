@@ -229,6 +229,7 @@ section.dark{
 .card img{
     width: 90%;
     height: 50%;
+    border-radius: 10px;
 }
 .card h3{
     color: #000000;
