@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --background-color: #BF0B28;
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size-p:1.2rem;
+    --font-size-h2:1.5rem;
+}
+
+/* Navegação*/
+nav{
+    position: fixed;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    
+    background-color: var(--background-color);
+    z-index: 2;
+    transition: 1.2s;
+}
+nav.mostrar{
+    transition: 0.9s;
+    top: 0;
+}
+nav.mostrar .opcoes button.abrir{
+    display: none;
+}
+nav.mostrar .opcoes button.fechar{
+    display: flex;
+}
+nav .opcoes button.fechar{
+    display: none;
+}
+nav .slide{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 40px 30px 50px;
+    overflow-x: scroll;
+    scrollbar-width:auto;
+    border-bottom: 2px solid darkgray;
+    height: 300px;
+    gap: 30px;
+}
+nav .slide::-webkit-scrollbar{
+    display:flex;
+    height: 5px;
+    background-color: #ffffff;
+}
+nav .slide::-webkit-scrollbar-thumb{
+    display:flex;
+    background-color: rgb(255, 208, 0);
+}
+nav .slide .item{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px 0 0 0 ;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+nav .slide .item h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+nav .slide .item p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    color: #fff;
+}
+nav .opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+}
+nav .opcoes h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+nav .opcoes a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin:  0 0 0 30px;
+}
+nav .opcoes button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--background-color);
+    background-color: white ;
+    padding: 10px 20px ;
+    border-radius: 50px;
+    border-color: none;
+    margin-left: auto;
+    margin-right: 100px;
+    border-color: transparent;
+}
+/* header*/
+body{
+   background-color: #ffffff3d;
+}
+header{
+   
+    margin-top: 70px;
+    width: 100%;
+    background-image: url(./img/PIZZARIA\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350vh;
+    backdrop-filter: blur(20px);
+}
+ul{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    margin: 20px;
+    gap: 50px;
+    list-style-type: none;
+}
+ul a {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family);
+    font-weight: bold;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+.home{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.192);
+    
+}
+.guia-nav{
+    display: flex;
+    text-align:end;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+.guia-nav:hover{
+    transition: all 0.7s;
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 15px;
+}
+.cardápio{
+    padding-top: 5rem;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.192);
+    padding-bottom: 100px;
+}
+.itens{
+    font-size: var(--font-size-h2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: 350px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 15px 10px 20px 0px rgba(75, 75, 75, 0.726)
+}
+.itens button{
+    margin-top: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 80%;
+}
+.itens button:hover{
+    background-color: var(--background-color);
+    color: whitesmoke;
+    transition: all 0.5s;
+    
+}
+.itens p {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family);
+}
+.itens h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+}
+.itens img {
+ width: 300px;
+ height: 250px;
+ border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    z-index: 0;
+    background-color: rgba(169, 169, 169, 0.192);
+    
+}
+.w3-button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    backdrop-filter: blur(20px);
+    background-color: #ffffffb9;
+}
+.w3-display-left{
+ left: 30px;
+}
+.w3-display-right{
+left: -30px;
+}
+.endereco{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: rgba(169, 169, 169, 0.192);
+    padding: 100px 100px;
+    height: 100vh;
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    color: white;
+    font-weight: bolder;
+}
+.map{
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    font-family: var(--font-family);
+    padding: 10px;
+}
+
+/*Media screen*/
+
+@media screen and (max-width:790px){
+    nav .slide::-webkit-scrollbar{
+        display:none;
+    }
+    nav .slide::-webkit-scrollbar-thumb{
+        display:none;
+    }
+    .opcoes a {
+        display: none;
+    }
+    .opcoes{
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    nav .opcoes button {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: rgb(0, 110, 255);
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 50px;
+        border-color: none;
+        margin-left: auto;
+        margin-right: 0;
+        border-color: transparent;
+    }
+}
