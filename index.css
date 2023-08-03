@@ -513,7 +513,7 @@ span{
         width: 250px;
     }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:385px){
     .kaio-ft{
         width: 100px;
     }
@@ -526,11 +526,17 @@ span{
     li{
         font-size: 15px;
     }
+    .office{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
     .main{
-        height: 150vh;
+        height: auto;
     }
     .card{
         width: 150px;
+        height: auto;
     }
     .icon{
         width: 30px;

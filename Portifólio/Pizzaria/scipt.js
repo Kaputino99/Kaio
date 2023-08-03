@@ -9,6 +9,9 @@ const botaoFechar = document.querySelector('button.fechar')
     nav.classList.remove('mostrar')
  })
 
+
+
+ 
  var slideIndex = 1;
 showDivs(slideIndex);
 
