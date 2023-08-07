@@ -1,6 +1,6 @@
 const chk = document.getElementById('chk')
 chk.addEventListener('click', function () {
-    document.getElementById('title-contact').style.color = 'white'
+    document.getElementById('title-contact').classList.toggle('dark')
     document.getElementById('body').classList.toggle('dark')
     document.getElementById('fundo-label').classList.toggle('dark')
     document.querySelector('header').classList.toggle('dark')

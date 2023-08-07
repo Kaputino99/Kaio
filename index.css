@@ -277,12 +277,12 @@ section.dark{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins',sans-serif;
     color: #000000;
 }
 .contact label,button{
     font-family: 'Poppins' sans-serif;
-    color: #000000;
+    color: #ffffff;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -304,6 +304,9 @@ section.dark{
     color: #000000;
     font-family: sans-serif;
     font-size: 50px;
+}
+#title-contact.dark{
+    color: #ffffff;
 }
 .form{
     display: flex;
@@ -511,6 +514,12 @@ span{
     }
     .text-sobre.dark{
         width: 250px;
+    }
+    .contact{
+        padding-top: 20px;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width:385px){
